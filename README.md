@@ -12,9 +12,15 @@ an interactive kicad workshop for diy video-art making instruments
 
 together we will try to adapt a video glitch processing circuit created orginally by [Karl Klomp](https://www.karlklomp.nl/) known as __the rupter__. this project and many other interesting historic video hardware glitch machines can be seen on [web-archive](https://web.archive.org/web/20150206171254/https://www.karlklomp.nl/) of their site.
 
-- [video demo of rupter](https://vimeo.com/13738566)
+### original circuit:
 
-### original schematic:
+[![image](https://user-images.githubusercontent.com/12017938/97462093-add4c000-193e-11eb-9234-b89c1700fb6e.png)](https://vimeo.com/13738566)
+
+
+![image](https://user-images.githubusercontent.com/12017938/97461494-1b342100-193e-11eb-9746-ab868f613323.png)
+
+![image](https://user-images.githubusercontent.com/12017938/97461894-79610400-193e-11eb-89d4-a3764f4bab7b.png)
+
 
 ![image](https://user-images.githubusercontent.com/12017938/97349019-3ac04080-188f-11eb-9a8b-2f2abbbc492c.png)
 
@@ -26,7 +32,12 @@ there are a few quirks of this design that make it difficult to adapt to a pcb p
 
 - i guess the pots should be 100k or 1k ? would try with both and see which are better (100ohm pots are bery uncommon)
 - although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead
-- a 'circuit bent' style schematic can be difficult to interpret and understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much.
+- a 'circuit bent' style schematic can be difficult to interpret and understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much. 
+
+here is a handdrawn schematic of my interpretation which we will try to create in kicad:
+
+![image](https://user-images.githubusercontent.com/12017938/97461205-d1e3d180-193d-11eb-9b7b-289956e5a19f.png)
+
 
 ### further notes on the circuit
 
