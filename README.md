@@ -28,7 +28,11 @@ there are a few quirks of this design that make it difficult to adapt to a pcb p
 - although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead
 - a 'circuit bent' style schematic can be difficult to interpret and understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much.
 
+### further notes on the circuit
 
+hope i get time to test build the circuit -> then can make some notes on some parts.
+
+- [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v.
 
 ## links to parts used:
 
