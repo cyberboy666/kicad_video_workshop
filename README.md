@@ -2,17 +2,35 @@
 
 an interactive kicad workshop for diy video-art making instruments
 
-## download kicad:
+## getting started:
 
-- https://kicad-pcb.org/download/
+- download kicad ( version >=5 ): https://kicad-pcb.org/download/
+- download this repo (git clone or as zip under _code_ here)
+- open the file in _workshop_project_ / __workshop_project.pro__ with kicad
 
-## some images:
+## the challenge:
+
+together we will try to adapt a video glitch processing circuit created orginally by [Karl Klomp](https://www.karlklomp.nl/) known as __the rupter__. this project and many other interesting historic video hardware glitch machines can be seen on [web-archive](https://web.archive.org/web/20150206171254/https://www.karlklomp.nl/) of their site.
+
+- [video demo of rupter](https://vimeo.com/13738566)
+
+### original schematic:
 
 ![image](https://user-images.githubusercontent.com/12017938/97349019-3ac04080-188f-11eb-9a8b-2f2abbbc492c.png)
 
 ![image](https://user-images.githubusercontent.com/12017938/97349086-51669780-188f-11eb-94a8-aa0cae28450b.png)
 
-## some parts:
+### my interpretation:
+
+there are a few quirks of this design that make it difficult to adapt to a pcb project:
+
+- i guess the pots should be 100k or 1k ? would try with both and see which are better (100ohm pots are bery uncommon)
+- although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead
+- a 'circuit bent' style schematic can be difficult to interpret and understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much.
+
+
+
+## links to parts used:
 
 part | footprint | link
 --- | --- | ---
