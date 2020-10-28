@@ -4,13 +4,16 @@ an interactive kicad workshop for diy video-art making instruments
 
 ## getting started:
 
-- download kicad ( version >=5 ): https://kicad-pcb.org/download/
-- download this repo (git clone or as zip under _code_ here)
+- download [kicad](https://kicad-pcb.org/download/) ( version >=5 )
+- download _this_ repo (git clone or as zip under _code_ here)
 - open the file in _workshop_project_ / __workshop_project.pro__ with kicad
 
 ## the challenge:
 
 together we will try to adapt a video glitch processing circuit created orginally by [Karl Klomp](https://www.karlklomp.nl/) known as __the rupter__. this project and many other interesting historic video hardware glitch machines can be seen on [web-archive](https://web.archive.org/web/20150206171254/https://www.karlklomp.nl/) of their site.
+
+<details>
+<summary>details of the original circuit</summary>
 
 ### original circuit:
 
@@ -32,18 +35,22 @@ there are a few quirks of this design that make it difficult to adapt to a pcb p
 
 - i guess the pots should be 100k or 1k ? would try with both and see which are better (100ohm pots are bery uncommon)
 - although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead
-- a 'circuit bent' style schematic can be difficult to interpret and understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much. 
+- a 'circuit bent' style schematic can be difficult to understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much in theory. as is often the case things will be different in practice. 
+
+### further notes on the circuit
+
+hope i get time to test build the circuit -> then can make some more notes:
+
+- [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v.
+
+</details>
+
+## the schematic
 
 here is a handdrawn schematic of my interpretation which we will try to create in kicad:
 
 ![image](https://user-images.githubusercontent.com/12017938/97461205-d1e3d180-193d-11eb-9b7b-289956e5a19f.png)
 
-
-### further notes on the circuit
-
-hope i get time to test build the circuit -> then can make some notes on some parts.
-
-- [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v.
 
 ## links to parts used:
 
