@@ -42,6 +42,7 @@ there are a few quirks of this design that make it difficult to adapt to a pcb p
 from building:
 
 - [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v. confirmed this when building
+- i measured the current from the lm317 and was around 20mA so could also use the smaller/cheaper [part](https://www.taydaelectronics.com/lm317lz-lm317l-lm317-0-1a-voltage-regulator-ic.html)
 - tried with 200ohm , 1k and 100k pots. all were quite interesting. i would choose 1k pots myself.
 - tried with some different cap values. no cap would give closer to a clean signal. higher caps tend to just give dropouts (with a few hard to tune effects) lower values seems most interesting. i would experiment some more with which cap values to use.
 - i tried to figure out which way to orieintate the pots to make most sense. still it is not that obvious to me. would have to play around with the circuit some more to fine tune this.
