@@ -46,6 +46,7 @@ from building:
 - tried with some different cap values. no cap would give closer to a clean signal. higher caps tend to just give dropouts (with a few hard to tune effects) lower values seems most interesting. i would experiment some more with which cap values to use.
 - i tried to figure out which way to orieintate the pots to make most sense. still it is not that obvious to me. would have to play around with the circuit some more to fine tune this.
 - i tried switching -in/out of second opamp to see if liked the effect better but it wasnt as interesting.
+- i tested with ntsc and it seems to give better colour glitches than as i remember with pal
 
 </details>
 
