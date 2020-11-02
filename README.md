@@ -33,15 +33,21 @@ together we will try to adapt a video glitch processing circuit created orginall
 
 there are a few quirks of this design that make it difficult to adapt to a pcb project:
 
-- i guess the pots should be 100k or 1k ? would try with both and see which are better (100ohm pots are bery uncommon)
-- although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead
+- its not clear which pot values to use - 100k or 1k ? (100ohm pots are bery uncommon) after testing i liked the effects with 1k_pots better
+- although possible to use a rotary switch on pcb, the footprints for these are a little complicated and i opted to use some (cheap) slide switches in parallel instead. lower resistor values seemed to work better here than higher ones. you should experiment for yourself which values to use here !
 - a 'circuit bent' style schematic can be difficult to understand since often are based on misusing components. Bastien made a [simulation](https://tinyurl.com/yyvfhpfx) of the first stage which doesnt appear to do much in theory. as is often the case things will be different in practice. 
 
 ### further notes on the circuit
 
-hope i get time to test build the circuit -> then can make some more notes:
+from building:
 
-- [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v.
+- [lm317](http://www.learningaboutelectronics.com/Articles/LM317-voltage-regulator) is adjustable voltage regulator - ouput voltage is `1.25*(1 + r2/r1)` where in this case r2=1k and r1=220ohm. so voltage output should be around 7v. confirmed this when building
+- i measured the current from the lm317 and was around 20mA so could also use the smaller/cheaper [part](https://www.taydaelectronics.com/lm317lz-lm317l-lm317-0-1a-voltage-regulator-ic.html)
+- tried with 200ohm , 1k and 100k pots. all were quite interesting. i would choose 1k pots myself.
+- tried with some different cap values. no cap would give closer to a clean signal. higher caps tend to just give dropouts (with a few hard to tune effects) lower values seems most interesting. i would experiment some more with which cap values to use.
+- i tried to figure out which way to orieintate the pots to make most sense. still it is not that obvious to me. would have to play around with the circuit some more to fine tune this.
+- i tried switching -in/out of second opamp to see if liked the effect better but it wasnt as interesting.
+- i tested with ntsc and it seems to give better colour glitches than as i remember with pal
 
 </details>
 
