@@ -57,6 +57,24 @@ here is a handdrawn schematic of my interpretation which we will try to create i
 
 ![image](https://user-images.githubusercontent.com/12017938/97461205-d1e3d180-193d-11eb-9b7b-289956e5a19f.png)
 
+## some kicad shortcuts
+
+Schematics shortcuts:
+
+- __a__ to add symbol
+- __m__ to move symbol
+- __e__ to edit symbol
+- __c__ to duplicate symbol
+- __w__ to draw wire
+- _esc_ to return to pointer tool
+
+pcb_route shortcuts:
+
+- __m__ to move item
+- __x__ to route track
+- __v__ to add via
+- _esc_ to return to pointer tool
+
 
 ## links to parts used:
 
